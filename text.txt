@@ -1,2 +1,6 @@
 test README file for java training
 new text file test
+
+xxxxx
+
+test text 123
