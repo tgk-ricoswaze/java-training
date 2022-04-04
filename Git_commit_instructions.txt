@@ -6,3 +6,6 @@ instructions for committing a change in GitHub
 4. push the file using [git push]
 
 make sure to check status on file using [git status] as you go along 
+
+
+You can create a new branch using the command [git checkout -b new_branch_name]
