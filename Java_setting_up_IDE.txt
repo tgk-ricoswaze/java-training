@@ -1,8 +1,16 @@
-\\Setting up IDE for Java
+Creating a JAR file
 
-public class Hello{
+JAR - Java Archived file
 
-	public static void main(String[] args) {
-		System.out.println("Hello Didier");
-	}
-}
+Create a MANIFEST.MF file containing metadata:
+	
+	file -> project structure -> artifacts -> Add Jar file -> select main class -> include in project build -> run the code to create an artifact directory
+
+You can run the jar file outside the dev environment:
+
+Use cmd and go to the artifact directory.
+run [java -jar (name of file.jar)]
+
+Build tools usually create jar files along with their dependancies and packages them -> pushes them to a repository. 
+---> Maven and Gradle are main build tools for real java dev work.
+
