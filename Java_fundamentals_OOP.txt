@@ -1,0 +1,17 @@
+Object orientation is based on objects.
+-State (data, held in fields)
+-Behavior (methods,functions)
+The state is hidden from other objects 
+-data is accessed through the object's own methods
+
+--> Collection of objects working together is an OO program.
+
+-Encapsulation protects the object's fields from external access. 
+-Each object can call other objects through methods to access the data of the objects they belong too.
+
+--Objects are created through a class --> class instance = object.
+
+Conceptual classes take nouns from use cases in order to figure out class relations. 
+
+aggregation relationship - part object cannot exist independently (hollow diamond)
+composition relationship - part object can exist independently (solid diamond)
