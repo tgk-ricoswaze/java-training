@@ -1,0 +1,160 @@
+-Statements must end with [;] - you can use ctrl+shift+enter to start a new line. 
+
+-comment using [//...], [/*...*/], or [/**...*/]
+
+-packages are always lowercase and use reverse domain name notation
+
+	example: [package com.pluralsight.search;]
+----------------------------
+Variables are named data storage with a type
+
+	example: int dataValue;
+		 dataValue = 100;
+
+	or 	 int dataValue = 100;
+
+	- use camerCase naming convention
+
+-variables can be declared final
+
+	example: final int myVar; 
+
+Integer types :
+	byte  -128 > x > 127
+	short -32768 > x > 32767
+	int   -2E9 > x > 2E9
+	long  -9E18 > x > 9E18   -> have to put [L] at the end of the statement to denote literal form
+
+Floating Point types:
+	float  1.4E-45 > x > 3.4E38   -> have to put [f] literal
+	double 4.9E-324 > x > 1.7E308  -> have to put [d] literal
+
+Character type: Stores a single unicode character
+
+	example: char regularU = 'U';
+
+Boolean type: Stores true/false values
+
+	example: boolean iLoveJava = true;
+
+------------------------------------------
+Operators: Basic, Prefix/postfix, Compound assignment
+
+Basic operators : [+, -, *, /, %]
+	*division operator gives whole number result when using int data type.
+
+Prefix/Postfix operators: [++,--] increment or decrement by 1
+	*order matters -> using it after the variable stores in memory but doesn't immediately give you the result
+
+Compound assignment: Apply right side value to left side -> store result in variable on left side.
+
+-----------------------------------------------
+Data type conversions
+
+Implicit type conversion: conversion automatically performed by the compiler
+
+Explicit type conversion: Conversion performed explicityly in code with cast operator
+
+	example: int intValueOne = 50;
+		 long longValueOne = intValueOne; (implicit)
+
+	or 	 long longValueOne = (long) longValueOne; (explicit)
+
+Widening conversions: Used for mixed integer, floating point sizes.
+	intger - uses largest integer
+	floating point - uses a double
+	combination - uses largest floating point
+
+*Compiler cannot automatically do shortening conversions but will automatically do widening conversions
+
+----------------------------------------------
+Conditional logic 
+
+Check the relationship between values using these 6 relational operators:
+	1. Greater than >
+	2. Greater than or equal to >=
+	3. Less than <
+	4. Less than or equal to <=
+	5. Equal to ==
+	6. Not equal to !=
+
+Conditional assignment returns a value based on the result of a condition
+
+	[result = condition ? true-value:false-value;]
+
+If-else:
+	
+	if (condition)
+		true-statement 1;
+	else if 
+		true-statement 2;
+	  .
+	  .
+	  .
+	else 
+		false-statement;
+
+You can also use a switch operator 
+
+	example: switch(variable checked)
+			result = x + x;
+			break;
+
+------------------------------------------------------
+Logical operators
+
+1. and - &
+2. or - |
+3. XOR - ^ - only one side is true and one side is false
+4. negation - !
+
+Conditional logical operators: double up on the operator 
+
+1. &&
+2. ||
+3. ^^
+4. !!
+---------------------------------------------------------
+Block statements
+
+You can block code together by using {} brackets. All variables inside the block have their scope set to the block 
+----------------------------------------------------------
+Loops
+
+1. While loop - checks condition at loop start
+2. Do-while loop - checks condition at loop end 
+3. For loop
+
+----------------------------------------------------------
+Arrays
+
+example:
+	float[] theVals = new float[3];
+	theVals[0] = 10.0f;
+	theVals[1] = 32.0f;
+	theVals[2] = 12.2f;
+or
+	float[] theVals = {1.0f,2.0f,....xf}
+
+for-each loop:
+
+example: 
+	for(float currentVal: theVals )
+		System.out.println(currentVal);
+------------------------------------------------------------
+Methods: Mechanism for organizing code and creating reusable code blocks
+	 Can receive data and return data
+
+Form:
+
+	static [return type] name() {
+		statements
+	}
+
+
+
+
+
+
+
+
