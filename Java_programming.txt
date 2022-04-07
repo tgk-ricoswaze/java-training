@@ -152,9 +152,26 @@ Form:
 	}
 
 
+----------------------------------------------------------------
+String Class
 
+-Stores sequence of unicode characters - literal uses ""
+- Use +, += to concatenated 
 
+-String equality: use .equals() method
 
+	if(s1.equals(s2))
 
+-Intern a string: matches the value of string objects 
 
+	.intern(); 
 
+String methods .length , .trim, .split, etc 
+
+Converting non-string types into strings:
+
+	String.valueOf;
+
+String formatting 
+
+	String.format( " [%(flags)(width)(etc)(conversion)] ") -> % is the format specifier
