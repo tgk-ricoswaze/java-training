@@ -1,0 +1,39 @@
+Java collections
+
+- List, Set (SortedSet), Queue (Deque), Map (SortedMap)
+
+	- () = extension
+
+- refer to collections flowchart to see when to use which collection. 
+
+review comparators 
+---------------------------------
+List collections - collections with an iteration order -> every element has an index association. 
+
+	- Use list collections to add elements to an ArrayList or LinkedList
+	-LinkedLikst main use for adding large amounts to the start of the list. 
+
+Map collections - sets an ID to a value to create a dictionary.
+
+	- HashMap and TreeMap implementations
+	- HashMap is more commonly used
+
+	Hashchode should be immutable, and return the same value consistently for each key. 
+
+---------------------------------------
+Java Streams - allows you to write code that reads more like the business problem being solved. 
+
+	- Use a collector to grab the elements of the stream and group them.
+----------------------------------------
+Factory methods - builds new instances of collections that can be made unmodifiable, immutable, empty and wrapping collections
+
+Operations - Useful collection algorithms  
+
+-----------------------------------------
+Sets - Allows you to add a collection of unique values into a HashSet or TreeSet
+
+	
+
+
+
+

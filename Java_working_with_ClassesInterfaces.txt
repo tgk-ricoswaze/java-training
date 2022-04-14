@@ -1,0 +1,69 @@
+
+Classes and Objects
+
+Class is a template for creating objects 
+	- fields are the data withing a class and represent the state
+	- Methods are executable code
+
+*You must use [new] to declare a class instance
+
+Access Modifiers: tell the app where you can create new class instances
+
+Access and Mutators - control field access
+
+	-Accessor retrieves field value: [getFieldName]
+
+	-Mutator modifies field value: [setFieldName]
+
+Class initial state 
+	- Field types are set to their 0 values 
+
+	-Use field initializers to set initial values
+
+Use constructers, which are code that runs during object creation 
+---------------------------------------------------
+Static members 
+
+Creates static fields or static methods that are part of the whole class instead of individual instances
+
+	- Can only access static members
+
+----------------------------------------------------
+Inheritence
+
+You can extend classes into derived class members
+	
+	-Fields are hidden if an extended class calls the same field.
+	- If a method is called from a derived class with the same signature, it overrides the base class method.
+
+	- fields look at the type of reference
+	- methods look at the type of instance
+
+
+* [@Override] - overrides the method in a base class
+* use [instanceof] function to point to a specific object instance 
+
+You can use [super] to refer back to the base class object
+
+You can prevent inferitence by marking a class as [final] - this prevents the base class from being extended
+
+If you want certain methods to not be overritten, you can mark them as [final]
+
+You can require inheritence using the [abstract] keyword in the class name
+
+abstract methods have no body
+
+constructors are not inherited -> can specifically call a base case constructor using [super]
+----------------------------------------------------------
+Enumeration types [enum] flag
+
+- All uppercase and comma seperated
+
+define a finite list of valid values and supports conditional logic 
+ 
+------------------------------------------------------------
+Interfaces 
+
+provides a list of operations, classes implement interfaces 
+
+*might have to revisit
