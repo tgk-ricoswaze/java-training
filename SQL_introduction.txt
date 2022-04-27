@@ -1,0 +1,47 @@
+SQL syntax
+
+	> SELECT first_name FROM person; 
+
+	- Select Clause + From Clause = Keyword + identifier + Keyword + identifier 
+
+Basic command keywords: 
+1) SELECT - retrieves one or more rows from one or more tables.
+2) INSERT - adds one or more rows INTO a table.
+3) UPDATE - modifies one or more rows in a table. 			
+4) DELETE - removes one or more rows from a table.
+
+> Good practice to always table qualify the names of your columns.
+---- example: SELECT [person.first_name] FROM person;
+
+	- Can aliase the table name -> [as NameOfColumn]
+
+     example: SELECT [p.first_name, p.last_name] FROM [person p];
+
+- SELECT DISTINCT ... -> retrieves unique values from one or more tables. 
+------------------------------------------------------------------------ 
+-WHERE clause -> takes a boolean expression to filter a statement.
+
+Boolean operators: 1) AND - intersection
+		   2) OR - union
+		   3) BETWEEN - x<=z and x>=y
+		   4) LIKE - string with special wildcard characters
+		   5) IN - multi-value operator
+		   6) IS/IS NOT - checks for NULL values
+-------------------------------------------------------------------------
+ORDER BY and GROUP BY
+
+ORDER BY - allows you to order the result set by column values. 
+	- Set Functions:
+			1) COUNT - count the coumn specified
+			2) MAX - maximum value
+			3) MIN - min value
+			4) AVG - average of all numeric values
+			5) SUM - Sum of all numeric values
+
+	example: SELECT COUNT(p.person_first_name) FROM person p WHERE p.person_last_name = 'Banyeretse';
+
+GROUP BY - allows you to group multiple SELECT statements with set functions.
+HAVING - allows you to create a subset of the GROUP BY statement 
+
+
+

@@ -1,0 +1,42 @@
+Java Streams - ordered sequence of data
+	- provides a common I/O model 
+	- abstracts details of underlying source or destination
+	- unidirectional
+
+2 categories : Byte streams - binary data (InputStream class)
+	       Text streams - unicode data (Reader class)
+
+		-Always outputs a bit value -> can be cast to a byte/char for byte/text streams for input streams
+
+		- For output streams, you don't have to cast since java will automatically do a widening conversion from int to byte/char
+
+Common input/output stream derived classes -> Check pluralsight to review.
+
+Stream methods throw exceptions to indicate errors
+Cannot rely on standard java resource revocery to clean up streams
+	- Streams are backed by physical storage
+
+java.io package -> Stream-based i/o and legacy file/filesystem types
+
+java.nio.file package -> File/filesystem types
+
+Try-with-resources
+	-Automates resource cleanup
+	- Resources implement AutoCloseable
+
+Key types: Path
+	   Paths
+	   Files 
+	   FileSystem 
+	   FileSystems
+
+------------------------------------------
+String formatting and Regular Expressions
+
+StringJoiner class - simplify composing a string comprised of a sequence of values
+	- Specify string to separate values
+	- specify start/end strings
+
+
+	
+
