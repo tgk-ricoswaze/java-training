@@ -1,0 +1,21 @@
+Exceptions are non-intrusive ways to signal and handle errors
+
+Try/catch blocks - Runs catch block when an exception occurs in the try block of code. 
+
+Finally block allows for manual cleanup
+	-always runs following a try or catch
+Automating cleanup with Try-with-resources statement
+	- can be used with any type that implements AutoCloseable interface. 
+
+Try can have multiple catch blocks that run from top to bottom. 
+	-most specific exceptions should be first
+
+Checked exceptions are those that will be caught by the compiler in an IDE.
+
+Unchecked exceptions are only caught during runtime. 
+
+You can create a new exception using the new operator and include information with constructor 
+	- example: [throw new IllegalArgumentException("...")]
+
+Exceptions can be chained and accessed with getCause method
+
